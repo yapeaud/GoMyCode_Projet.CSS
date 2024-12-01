@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#resume">Resume</a>
+    </nav>
+
+    <main class="content">
+        <!-- Home Section -->
+        <section id="home">
+            <h1>Bienvenue dans mon Portfolio</h1>
+            <p>C'est ici que vous trouverez tout mon travail et mes réalisations.</p>
+            <article class="multimedia">
+                <video controls width="600">
+                    <source src="videos/Darla_Goldengoal_-_Aurore__Clip_Officiel_(1080p).mp4" type="video/mp4">
+                </video>
+                <audio controls>
+                    <source src="audios/KS Bloom - Galilée.mp3" type="audio/mpeg" />
+                </audio>
+            </article>
+
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Je suis un développeur passionné par la création d'applications web élégantes et fonctionnelles.</p>
+            <ul>
+                <li>Expérimenté en React.js et Node.js</li>
+                <li>Enthousiasmé par la technologie blockchain</li>
+                <li>Compétent en développement front-end et back-end</li>
+            </ul>
+        </section>
+        
+        <!-- Work Section -->
+        <section id="work">
+            <h2>My Work</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Projet</th>
+                        <th>Description</th>
+                        <th>Technologies</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Site du Portfolio</td>
+                        <td>Un portfolio personnel présentant mes compétences.</td>
+                        <td>HTML, CSS, JavaScript</td>
+                    </tr>
+                    <tr>
+                        <td>Plateforme E-commerce</td>
+                        <td>Une boutique en ligne pour les petites entreprises.</td>
+                        <td>React.js, Node.js, MongoDB</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume">
+            <h2>Resume</h2>
+            <p>Télécharger mon CV : <a href="#" download>Cliquez ici</a></p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="#" method="POST">
+                <label for="name">Nom:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+    </footer>
+</body>
+
+</html>
